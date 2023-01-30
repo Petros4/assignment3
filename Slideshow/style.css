@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    border-radius: border-box;
+    padding: 0;
+}
+/* SLIDESHOW */
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 700px;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 700px;
+    position: relative;
+  }
+  
+  .previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .previous {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #play, #stop {
+    cursor: pointer;
+    position: relative;
+    margin: 20px auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    width: fit-content;
+    display: block;
+    }
+
+.play-stop{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    /* width: 200px; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+    #dots {
+    text-align: center;
+    margin-top: 4px;
+    }
+    
+    .dot {
+    display: inline-block;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    margin: 0 2px;
+    background: grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.6s ease;
+    opacity: 0.5;
+    }
+    
+    .active, .dot:hover{
+    background-color: #333;
+    opacity: 1;
+    }
+
+    .dot1{
+        background-image: url(img/bernd-dittrich-VLsIJShkthc-unsplash.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    .dot2{
+        background-image: url(img/chelsea-essig-zCSIIoGQr2s-unsplash.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    .dot3{
+        background-image: url(img/marek-piwnicki-UktiWd4FS9U-unsplash.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    .dot4{
+        background-image: url(img/sam-goodgame-ZcRomh7extM-unsplash.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    .dot5{
+        background-image: url(img/takashi-miyazaki-7YbPmbuUkAo-unsplash.jpg);
+        background-size: cover;
+        background-position: center; 
+    }

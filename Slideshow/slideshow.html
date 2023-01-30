@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="slideshow.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="slideshow">
+        <img src="img/bernd-dittrich-VLsIJShkthc-unsplash.jpg" class="slides" />
+        <img src="img/chelsea-essig-zCSIIoGQr2s-unsplash.jpg" class="slides" />
+        <img src="img/marek-piwnicki-UktiWd4FS9U-unsplash.jpg" class="slides" />
+        <img src="img/sam-goodgame-ZcRomh7extM-unsplash.jpg" class="slides" />
+        <img src="img/takashi-miyazaki-7YbPmbuUkAo-unsplash.jpg" class="slides" />
+        <button class="previous" onclick="prevSlide()">prev</button>
+        <button class="next" onclick="nextSlide()">next</button>
+        <div class="play-stop">
+            <button id="play" onclick="playSlide()">Play</button>
+            <button id="stop" onclick="stopSlide()">Stop</button>
+        </div>
+    </div>
+    <div id="dots">
+        <span class="dot dot1" onclick="currentSlide(1)"></span>
+        <span class="dot dot2" onclick="currentSlide(2)"></span>
+        <span class="dot dot3" onclick="currentSlide(3)"></span>
+        <span class="dot dot4" onclick="currentSlide(4)"></span>
+        <span class="dot dot5" onclick="currentSlide(5)"></span>
+    </div>
+</body>
+</html>
